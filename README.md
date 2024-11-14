@@ -1,39 +1,47 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+### Shimmer:
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+A package provides an easy way to add skeleton shimmer loading effect in Flutter project
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
+![Shimmer Loading Animation](https://miro.medium.com/v2/resize:fit:1200/1*uZ5_qMv7QUAeCtaFCHzNKA.gif)
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
-
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
+### How to use
 
 ```dart
-const like = 'sample';
+import 'package:skeleton_shimmer_loading/skeleton_shimmer_loading.dart';
 ```
 
-## Additional information
+```dart
+        AppShimmerLoading(
+              isLoading: true,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Expanded(
+                    child: ShimmerItem(
+                      child: Container(
+                        width: 100,
+                        height: 20,
+                        color: Colors.yellow,
+                      ),
+                    ),
+                  ),
+                  ShimmerItem(
+                    child: Container(
+                      width: 100,
+                      height: 20,
+                      color: Colors.blue,
+                    ),
+                  ),
+                  Container(
+                    width: 100,
+                    height: 20,
+                    color: Colors.red,
+                  ),
 
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+
+                ],
+              ),
+            );
+```
+
+Good luck!!!

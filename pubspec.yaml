@@ -1,7 +1,7 @@
 name: skeleton_shimmer_loading
-description: "A new Flutter package project."
+description: A Flutter package that provides a customizable shimmer loading effect for your UI components.
 version: 0.0.1
-homepage:
+homepage: https://github.com/thonglaanh/skeleton_shimmer_loading
 
 environment:
   sdk: ">=3.4.4 <4.0.0"
